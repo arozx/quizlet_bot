@@ -15,7 +15,7 @@ args = parser.parse_args()
 password, username, mins, url = args.password, args.user, int(args.minutes), args.url
 # set path
 service = Service(
-    executable_path="home/user/.cache/selenium/geckodriver/linux64/0.32.0/geckodriver"
+    executable_path="C:/Development/gekodriver.exe"
 )
 # start session
 driver = webdriver.Firefox()

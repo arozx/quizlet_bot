@@ -21,7 +21,7 @@ _The bot's_ python dependancies can be installed by running `pip install -r requ
 
 ### Linux
 
-You **MUST** change line 18 in [linux_bot.py](linux_bot.py) to match the location of the selenium driver
+You **MUST** change line 18 in [linux_bot.py](linux_bot.py) to match the location of the selenium driver executable.
 
 ```sh
 python3 quizlet_bot/linux_bot.py -url -u -p -t
@@ -39,8 +39,10 @@ python3 quizlet_bot/linux_bot.py -url -u -p -t
 
 ### Windows
 
+You **MUST** change line 18 in [windows_bot.py](linux_bot.py) to match the location of the selenium driver .exe file.
+
 ```sh
-python3 quizlet_bot/windows_bot.py -url -u -p -t
+python quizlet_bot/windows_bot.py -url -u -p -t
 ```
 
 -url = flashcards **_full_** url
