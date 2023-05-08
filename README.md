@@ -1,51 +1,85 @@
-<h2 align="center">A Selenium Quizlet Bot</h2>
+<div>
+<a name="readme-top"></a>
 
-<p align="center">
-<a href="https://github.com/arozx/quizlet_bot/blob/main/LICENSE"><img alt="License: OpenBSD 3 Clause" src="https://img.shields.io/badge/licence-BSD%203--Clause-blueviolet"></a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
-</p>
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![BSD-3-CLAUSE License][license-shield]][license-url]
 
----
+<br />
+<h3 align="center">Quizlet bot</h3>
+  <p align="center">
+    A python selenium bot
+    <br />
+    <a href="https://github.com/arozx/quizlet_bot"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://github.com/arozx/quizlet_bot/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/arozx/quizlet_bot/issues">Request Feature</a>
+  </p>
+</div>
 
-# Installation and usage
 
-## Installation
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-You need to have _python3_, _selenium_, if you are **NOT** using firefox you must change line 21 in in the bot to:
-```python
-driver = webdriver."your webrowser here"()
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+This project intends to automate the usage of the web app quizlet. Though all modes are not supported currently, once complete the project will contain more features.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+
+
+### Prerequisites
+
+
+
+### Installation
+
+Clone the github repo by running
+
+```sh
+git clone https://arozx/quizlet_bot.git
 ```
-_The bot's_ python dependancies can be installed by running `pip install -r requirements.txt`.
 
+You **MUST** change line 18 in [bot.py](bot.py) to match the location of the selenium driver executable.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE -->
 ## Usage
 
-### Linux
-
-You **MUST** change line 18 in [linux_bot.py](linux_bot.py) to match the location of the selenium driver executable.
+To run the program use the following comand with the options noted below.
 
 ```sh
-python3 quizlet_bot/linux_bot.py -url -u -p -t
+python quizlet_bot/bot.py -url -u -p -t
 ```
 
--url = flashcards **_full_** url
-
--u = Quizlet Username
-
--p = Quizlet Password
-
--t = Time in minutes
-
----
-
-### Windows
-
-You **MUST** change line 18 in [windows_bot.py](linux_bot.py) to match the location of the selenium driver .exe file.
-
-```sh
-python quizlet_bot/windows_bot.py -url -u -p -t
-```
-
--url = flashcards **_full_** url
+-url = flashcards **full** url
 
 -u = Quizlet username
 
@@ -53,9 +87,11 @@ python quizlet_bot/windows_bot.py -url -u -p -t
 
 -t = Time in minutes
 
-# Roadmap
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<div align="center">
+
+<!-- ROADMAP -->
+## Roadmap
 
 ```mermaid
 graph TD;
@@ -66,4 +102,37 @@ graph TD;
     Quizlet-Bot-->Match;
     Quizlet-Bot-->Learn;
 ```
-</div>
+
+See the [open issues](https://github.com/arozx/quizlet_bot/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+## License
+
+Distributed under the BSD-3-CLAUSE License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+Twitter - [@arozx_](https://twitter.com/arozx_) - 
+
+Email - github@arozx.tech
+
+Project Link: [https://github.com/arozx/quizlet_bot](https://github.com/arozx/quizlet_bot)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/arozx/quizlet_bot.svg?style=for-the-badge
+[contributors-url]: https://github.com/arozx/quizlet_bot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/arozx/quizlet_bot.svg?style=for-the-badge
+[forks-url]: https://github.com/arozx/quizlet_bot/network/members
+[stars-shield]: https://img.shields.io/github/stars/arozx/quizlet_bot.svg?style=for-the-badge
+[stars-url]: https://github.com/arozx/quizlet_bot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/arozx/quizlet_bot.svg?style=for-the-badge
+[issues-url]: https://github.com/arozx/quizlet_bot/issues
+[license-shield]: https://img.shields.io/github/license/arozx/quizlet_bot.svg?style=for-the-badge
+[license-url]: https://github.com/arozx/quizlet_bot/blob/master/LICENSE

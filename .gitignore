@@ -1,0 +1,5 @@
+__pycache__
+gui
+tests
+gui_requirements.txt
+windows_bot.py
