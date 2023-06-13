@@ -116,7 +116,7 @@ Distributed under the BSD-3-CLAUSE License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Twitter - [@arozx_](https://twitter.com/arozx_) - 
+Twitter - [@arozx_](https://twitter.com/arozx_)
 
 Email - github@arozx.tech
 
